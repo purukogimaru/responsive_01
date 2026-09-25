@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nagi hair salon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/mb.css">
+    <link rel="stylesheet" href="./css/pc.css">
+</head>
+<body>
+
+<header>
+    <p>nagi hair salon</p>
+</header>
+
+<main>
+  <h1>新規アカウントを作成する</h1>
+
+  <div >
+  <form>
+
+    <div class="field_name">
+      <h2>お名前</h2>
+      <input type="text" name="name" placeholder="山田 花子">
+    </div>
+
+    <div class="field_birthday">
+      <h2>生年月日</h2>
+          <select class="dob-select" name="dob_year" required>
+            <option value="" selected disabled>年</option>
+          </select>
+          <select class="dob-select" name="dob_month" required>
+            <option value="" selected disabled>月</option>
+          </select>
+          <select class="dob-select" name="dob_day" required>
+            <option value="" selected disabled>日</option>
+          </select>
+    </div>
+
+    <div class="field_gender">
+      <h2>性別</h2>
+      <div class="gender-row">
+        <label class="gender-option">
+          <input type="radio" name="gender" value="male">
+          男性
+        </label>
+        <label class="gender-option">
+          <input type="radio" name="gender" value="female">
+          女性
+        </label>
+        <label class="gender-option">
+          <input type="radio" name="gender" value="no_answer">
+          回答しない
+        </label>
+      </div>
+    </div>
+
+    <div class="field_address">
+      <h2>住所</h2>
+      <input type="text" name="zip" placeholder="郵便番号">
+      <a href="#" class="zip-search">郵便番号を調べる</a>
+      <input type="text" name="city" placeholder="市町村">
+      <input type="text" name="town" placeholder="町名">
+      <input type="text" name="building" placeholder="建物名">
+    </div>
+
+    <div class="field_phone_number">
+      <h2>電話番号</h2>
+      <input type="tel" name="phone" placeholder="090-1234-5678">
+    </div>
+
+    <div class="mail_adress">
+      <h2>メールアドレス</h2>
+      <input type="email" name="email" placeholder="example@mail.com">
+    </div>
+
+    <div>
+      <input type="checkbox" id="newsletter" name="newsletter">
+      <label for="newsletter">お知らせメールを受け取る</label>
+    </div>
+
+    <p class="terms">
+      アカウント作成には<a href="#">利用規約</a>および<a href="#">プライバシーポリシー</a>への同意が必要です。
+    </p>
+
+    <div>
+      <input type="checkbox" id="agree" name="agree" required>
+      <label for="agree">利用規約およびプライバシーポリシーに同意する</label>
+    </div>
+
+    <button>同意してアカウントを作成</button>
+
+  </form>
+  </div>
+</main>
+
+<footer>
+    <small>&copy;nagi hair salon</small>
+</footer>
+
+<script src="./js/script.js"></script>
+</body>
+</html> 
